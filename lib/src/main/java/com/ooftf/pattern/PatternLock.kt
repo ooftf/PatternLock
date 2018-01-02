@@ -18,18 +18,23 @@ import java.util.*
  */
 class PatternLock : View {
     var onSlideListener: OnSlideListener? = null
-    internal var mPaintPoint: Paint
+    internal var paintPoint: Paint
     internal var paintLine: Paint
     internal var points: MutableList<Point> = ArrayList()
     lateinit var normalDrawable: Drawable
     lateinit var selectedDrawable: Drawable
     lateinit var errorDrawable: Drawable
-    internal var wrapSize: Int = 0
     internal var currentX: Float = 0.toFloat()
     internal var currentY: Float = 0.toFloat()
     internal var touching = false
     internal var iconSize = 0f
+    /**
+     * 错误状态下线的颜色
+     */
     private var errorColor = Color.parseColor("#FF0000")
+    /**
+     * 正常状态下线的颜色
+     */
     private var nomalColor = Color.parseColor("#00FFFF")
     /**
      * 已经选择的点
@@ -50,11 +55,10 @@ class PatternLock : View {
     }
 
     init {
-        wrapSize = dip2px(context, 200f)
         initPoint()
         selectedPoints = ArrayList()
-        mPaintPoint = Paint()
-        mPaintPoint.isAntiAlias = true
+        paintPoint = Paint()
+        paintPoint.isAntiAlias = true
         paintLine = Paint()
         paintLine.isAntiAlias = true
     }
@@ -134,7 +138,7 @@ class PatternLock : View {
     }
 
     /**
-     * 判断某个坐标是否出发到Point
+     * 判断某个坐标是否触发到Point
      * @param currentX
      * @param currentY
      * @return
