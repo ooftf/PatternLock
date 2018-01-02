@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PatternLock">
+        <attr name="nomalIconId" format="reference"/>
+        <attr name="selectedIconId" format="reference"/>
+        <attr name="errorIconId" format="reference"/>
+        <attr name="nomalLineColor" format="color"/>
+        <attr name="errorLineColor" format="color"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="iconSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>
