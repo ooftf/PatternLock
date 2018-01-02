@@ -212,7 +212,6 @@ class PatternLock : View {
                     errorDrawable.draw(canvas)
                 }
             }
-
         }
     }
 
