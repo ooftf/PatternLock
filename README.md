@@ -1,4 +1,5 @@
 
+[![](https://jitpack.io/v/ooftf/PatternLock.svg)](https://jitpack.io/#ooftf/PatternLock)
 # PatternLock
 手势密码控件
 ## 效果图
