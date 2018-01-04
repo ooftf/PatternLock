@@ -3,7 +3,7 @@
 # PatternLock
 手势密码控件
 ## 效果图
-
+![](https://github.com/ooftf/PatternLock/raw/master/art/PatternLock.gif)
 ## Gradle配置
 ```gradle
 allprojects {
