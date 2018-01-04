@@ -7,10 +7,9 @@
     android:gravity="center"
     tools:context="com.ooftf.patternlock.MainActivity">
     <com.ooftf.pattern.PatternLock
-        app:selectedIconId="@drawable/ic_launcher_foreground"
         android:id="@+id/patternLock"
         android:padding="18dp"
         android:background="@color/colorPrimary"
-        android:layout_width="280dp"
-        android:layout_height="360dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

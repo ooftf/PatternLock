@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
                     Handler().postDelayed({ patternLock.reset() }, 1000)
                 }
             }
-
         }
     }
 }
