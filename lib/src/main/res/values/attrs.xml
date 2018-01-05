@@ -8,6 +8,7 @@
         <attr name="errorLineColor" format="color"/>
         <attr name="lineWidth" format="dimension"/>
         <attr name="iconSize" format="dimension"/>
+        <attr name="allowRepeat" format="boolean"/>
     </declare-styleable>
 
 </resources>

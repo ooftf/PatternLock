@@ -28,6 +28,7 @@ class PatternLock : View {
     internal var currentY: Float = 0.toFloat()
     internal var touching = false
     internal var iconSize = 0f
+    private var allowRepeat = false
     /**
      * 错误状态下线的颜色
      */
@@ -72,6 +73,7 @@ class PatternLock : View {
         paintLine.strokeWidth = attributes.getDimension(R.styleable.PatternLock_lineWidth, dip2px(context, 8f).toFloat())
         nomalColor = attributes.getColor(R.styleable.PatternLock_nomalLineColor, Color.parseColor("#00FFFF"));
         errorColor = attributes.getColor(R.styleable.PatternLock_errorLineColor, Color.parseColor("#FF0000"));
+        allowRepeat = attributes.getBoolean(R.styleable.PatternLock_allowRepeat,false)
     }
 
     private fun initPoint() {
@@ -146,7 +148,7 @@ class PatternLock : View {
 
     internal fun intersectPoint(currentX: Float, currentY: Float) {
         points.filter { it.isIntersect(currentX, currentY) }
-                .filter { !selectedPoints.contains(it) }
+                .filter { allowRepeat||!selectedPoints.contains(it)}
                 .forEach {
                     it.state = PointState.SELECT
                     selectedPoints.add(it)

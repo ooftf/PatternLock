@@ -50,6 +50,7 @@ patternLock.onSlideListener = object : OnSlideListener {
 |nomalLineColor|正常状态下连线颜色|#00FFFF|
 |errorLineColor|错误状态下连线颜色|#FF0000|
 |lineWidth|连线宽度|8dp|
+|allowRepeat|是否允许点被重复选中|false|
 ## PatternLock方法
 |方法名|描述|
 |---|---|
