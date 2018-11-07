@@ -12,7 +12,7 @@ allprojects {
     }
 }
 dependencies {
-    compile 'com.github.ooftf:PatternLock:1.0.0'
+    compile 'com.github.ooftf:PatternLock:1.0.4'
 }
 ```
 ## 使用方式
