@@ -7,7 +7,8 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.ooftf.patternlock"
+        applicationId application_id
+
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
